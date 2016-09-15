@@ -10,6 +10,7 @@
             text-align: right;
         }
     </style>
+
     <div class="container-fluid" style="background-color: #e6e6e6; font-family: 'Century Gothic';">
         <div id="resumefade" style="margin: 7px; padding-top: 20px; padding-left: 20px; padding-right: 20px; display: none;">
             <div class="row">
@@ -17,7 +18,8 @@
                     <div class="row">
                         <asp:UpdatePanel runat="server" ID="UpdatePanel3" UpdateMode="Conditional">
                             <ContentTemplate>
-                                <asp:LinkButton runat="server" ToolTip="Download" ID="downBtn" CausesValidation="false">                               
+                                <asp:LinkButton runat="server" ToolTip="Download" ID="downBtn" CausesValidation="false">        
+                                                           
                                    <a href="https://georgiweb.blob.core.windows.net/docscontainer/Resume.docx">
                                        <i class="fa fa-download fa-fw fa-3x" aria-hidden="true"></i></a></asp:LinkButton>
                             </ContentTemplate>
@@ -74,7 +76,7 @@
                                         <div class="row" style="margin: 0px; padding: 0px;">
                                             <asp:TextBox ReadOnly="true" runat="server" ID="shareTxtBox" CssClass="form-control" OnFocus="this.select()"
                                                 Text="http://gkamacharov.com/Resume/Resume" TextMode="SingleLine"
-                                                Style="float: left; width: 100%; font-size: xx-small;" >
+                                                Style="float: left; width: 100%; font-size: xx-small;">
                                             </asp:TextBox>
                                         </div>
                                         <div class="row" style="margin: 0px; padding: 0px; padding-top: 5px; text-align: center;">
@@ -236,10 +238,10 @@
         </div>
     </div>
     <script>
+        
         $(document).ready(function () {
             $('#resumefade').fadeIn(2000);
         });
-
     </script>
 
 </asp:Content>
