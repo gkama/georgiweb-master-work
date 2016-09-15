@@ -58,6 +58,8 @@
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    text-align: center;
+    fy-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     transition: all .2s ease;

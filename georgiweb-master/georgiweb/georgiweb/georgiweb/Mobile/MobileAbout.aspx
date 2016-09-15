@@ -8,19 +8,29 @@
     <asp:UpdatePanel ID="updatepanel" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <h1>About</h1>
+                    </div>
+                </div>
+                <hr />
+
                 <div style="padding: 5px; font-family: 'Century Gothic';">
                     <p>
                         A little bit about me. My name is Georgi T. Kamacharov and I was born in a small Eastern Europen country called Bulgaria. I came to the United States of America about 8 years ago
                     and I have liked it ever since. I became a citizen roughly 3 years ago and now posses dual citizenship with Bulgaria and the US. 
-                    <br />
+                   
+                            <br />
                         <br />
                         Furthermore, after I graduated High School, I was uncertain of what career I would like to pursue once I graduated college. 
                     After my first year of college with an undecided major, I decided to give Computer Science a try.
                     I fell in love with it and have been developing my CS skills ever since.
-                    <br />
+                   
+                            <br />
                         <br />
                         I have/am a:
-                    <br />
+                   
+                            <br />
                         <ul>
                             <li>Developer / Programmer / Engineer.</li>
                             <li>Computer Science major, Mathematics minor, graduate from <a href="http://www.uky.edu/UKHome/" target="_blank">University of Kentucky</a>.</li>

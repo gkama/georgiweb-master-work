@@ -17,8 +17,9 @@
                     <div class="row">
                         <asp:UpdatePanel runat="server" ID="UpdatePanel3" UpdateMode="Conditional">
                             <ContentTemplate>
-                                <asp:LinkButton runat="server" ToolTip="Download" ID="downBtn" OnClick="downloadFile" CausesValidation="false" OnClientClick="downloadFile">                               
-                                   <i class="fa fa-download fa-fw fa-3x" aria-hidden="true"></i></asp:LinkButton>
+                                <asp:LinkButton runat="server" ToolTip="Download" ID="downBtn" CausesValidation="false">                               
+                                   <a href="https://georgiweb.blob.core.windows.net/docscontainer/Resume.docx">
+                                       <i class="fa fa-download fa-fw fa-3x" aria-hidden="true"></i></a></asp:LinkButton>
                             </ContentTemplate>
                         </asp:UpdatePanel>
                     </div>
@@ -70,11 +71,15 @@
                             <div class="panel-body">
                                 <asp:UpdatePanel runat="server" ID="UpdatePanel2" UpdateMode="Conditional">
                                     <ContentTemplate>
-                                        <div class="row">
-                                            <asp:TextBox runat="server" ID="shareTxtBox" CssClass="form-control"
+                                        <div class="row" style="margin: 0px; padding: 0px;">
+                                            <asp:TextBox ReadOnly="true" runat="server" ID="shareTxtBox" CssClass="form-control" OnFocus="this.select()"
                                                 Text="http://gkamacharov.com/Resume/Resume" TextMode="SingleLine"
-                                                Style="width: 100%;">
+                                                Style="float: left; width: 100%; font-size: xx-small;" >
                                             </asp:TextBox>
+                                        </div>
+                                        <div class="row" style="margin: 0px; padding: 0px; padding-top: 5px; text-align: center;">
+                                            <asp:Button runat="server" CssClass="btn btn-sm btn-defaul" Text="Select" ToolTip="Select"
+                                                ID="copyBtn" OnClick="copy" />
                                         </div>
 
                                     </ContentTemplate>

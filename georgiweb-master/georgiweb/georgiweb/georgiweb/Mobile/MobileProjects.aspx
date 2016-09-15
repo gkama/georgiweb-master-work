@@ -9,6 +9,12 @@
     <asp:UpdatePanel ID="updatepanel" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <h1>Projects</h1>
+                    </div>
+                </div>
+                <hr />
                 <!-- Personal Projects -->
                 <div id="work-section" class="section active" style="padding: 0px;">
                     <div class="row">

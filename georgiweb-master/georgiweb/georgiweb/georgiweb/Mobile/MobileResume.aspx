@@ -8,6 +8,12 @@
     <asp:UpdatePanel ID="updatepanel" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <h1>Resume</h1>
+                    </div>
+                </div>
+                <hr />
                 <div style="padding: 5px;">
                     <div style="font-family: 'Century Gothic'; text-align: center">
                     </div>

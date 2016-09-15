@@ -10,7 +10,14 @@
     </style>
     <asp:UpdatePanel runat="server" ID="updatepanel" UpdateMode="Conditional" style="font-family: 'Century Gothic'">
         <ContentTemplate>
-            <div class="container-fluid">
+            <div class="container-fluid" style="text-align: center;">
+                <div class="row">
+                    <img runat="server" src="~/Images/georgipic.jpg" class="img-circle person" alt="Georgi Kamacharov" />
+                </div>
+                <div class="row">
+                    <h1>GEORGI KAMACHAROV</h1>
+                    <h4>Developer • Programmer • Engineer</h4>
+                </div>
                 <!-- Home Page -->
                 <div id="work-section" class="section active" style="padding: 0px;">
                     <div class="row" style="margin-bottom: 5px; margin-top: 5px;">

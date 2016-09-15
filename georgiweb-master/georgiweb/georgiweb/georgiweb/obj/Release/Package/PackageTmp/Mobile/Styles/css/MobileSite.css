@@ -58,6 +58,7 @@
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    text-align: center;
     -ms-flex-pack: center;
     justify-content: center;
     transition: all .2s ease;
@@ -66,6 +67,13 @@
 a {
     color: #5d5d5d;
     text-decoration: none !important;
+}
+
+.img-circle .person{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 50%;
 }
 
 hr {

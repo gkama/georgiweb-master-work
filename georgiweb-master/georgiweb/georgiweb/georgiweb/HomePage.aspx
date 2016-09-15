@@ -196,7 +196,7 @@
             <div id="jb1" class="jumbotron text-left">
                 <div class="row">
                     <div class="col-sm-3" style="width: 320px;">
-                        <img runat="server" src="~/Images/georgipic.jpg" class="img-circle person" alt="Georgi Kamacharov" width="300" height="300">
+                        <img runat="server" src="~/Images/georgipic.jpg" class="img-circle person" alt="Georgi Kamacharov" width="300" height="300" />
                     </div>
 
                     <div class="col-sm-9">

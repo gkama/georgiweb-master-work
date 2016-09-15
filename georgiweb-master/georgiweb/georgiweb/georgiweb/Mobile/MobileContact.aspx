@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Mobile/Mobile.Master" AutoEventWireup="true" CodeBehind="MobileContact.aspx.cs" Inherits="georgiweb.Mobile.MobileContact" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
@@ -14,6 +15,13 @@
     </style>
     <asp:UpdatePanel ID="updatepanel" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <h1>Contact</h1>
+                    </div>
+                </div>
+                <hr />
                 <div id="contact" style="padding: 10px; color: black;">
                     <div class="row">
                         <div class="col-md-4">
@@ -27,6 +35,7 @@
                 <hr />
                 <div id="googleMap"></div>
                 <hr />
+            </div>
         </ContentTemplate>
     </asp:UpdatePanel>
     <!-- Add Google Maps -->
